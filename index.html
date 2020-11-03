@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Landing page</title>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="font-icons/css/animation.css" type="text/css" />
+    <link rel="stylesheet" href="font-icons/css/fontello.css" type="text/css" />
+    <link rel="stylesheet" href="font-icons/css/fontello-codes.css" type="text/css" />
+    <link rel="stylesheet" href="font-icons/css/fontello-embedded.css" type="text/css" />
+    <link rel="stylesheet" href="font-icons/css/fontello-ie7.css" type="text/css" />
+    <link rel="stylesheet" href="font-icons/css/fontello-ie7-codes.css" type="text/css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>   
+    <script src="js/wow.min.js"></script> 
+    <script> wow = new WOW(
+        {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // default
+          offset:       0,          // default
+          mobile:       true,       
+          live:         true        // default
+        }
+      )
+      new WOW().init(); </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+        <header>
+            <div class="info-top fixed-container">
+                <nav class="info-top__menu">
+                    <ul class="info-top__main-menu">
+                        <li class="info-top__menu-element"><a class='info-top__menu-link' href='#services'>Услуги</a></li>
+                        <li class="info-top__menu-element"><a class='info-top__menu-link' href='#examples'>Портфолио</a></li>
+                        <li class="info-top__menu-element"><a class='info-top__menu-link' href='#price'>Стоимость</a></li>
+                    </ul>
+                    <!-- <div class="burger-button">
+                        <div class="burger-button__bar1"></div>
+                        <div class="burger-button__bar2"></div>
+                        <div class="burger-button__bar3"></div>
+                    </div> -->
+                    <button class="burger-button">
+                        <span>menu toggle</span>
+                    </button>
+                </nav>     
+                <a href="tel:+74999955577" class="tel"> +7&nbsp;(499)&nbsp;995-55-77</a>
+                <button class="calling">Заказать звонок</button>
+            </div>    
+        </header>
+    <main class="main">
+        <div class="main__symbol symbol1">{&nbsp;}</div>
+        <div class="main__symbol symbol2">&lt;div&gt;</div>  
+        <div class="main__symbol symbol3">#</div>
+        <div class="main__symbol symbol4">&lt;div&gt;</div>
+        <div class="main__symbol symbol5">&lt;/&gt;</div>
+        <div class="main__symbol symbol6">&lt;/&gt;</div>
+        <section>
+<!--             <img class="info-man__mobile-img fixed-container" src="img/man_mobile.png" alt="Man's photo">
+            <img class="info-man__img fixed-container" src="img/man_w_bg.png" alt="Man's photo">
+            <img class="info-man__tablet" src="img/man_1024.png" alt="Man's photo">  --> 
+            <div class="info-man fixed-container">
+                <div>
+                    <h1 class="info-man__name">Никифоров Илья</h1>
+                    <p class="info-man__job">Frontend-разработчик и веб-верстальщик</p>
+                    <button class="more info-man__button">Узнать больше</button>
+                </div>    
+                <picture class="info-man__img">
+                    <source media="(max-width: 361px)" srcset="img/man_mobile.png">
+                    <source media="(min-width: 361px) and (max-width: 1024px)" srcset="img/man_1024.png">
+                    <source media="(min-width: 1024px)" srcset="img/man_w_bg.png">
+                    <img src="img/man_w_bg.png" alt="Man's photo">
+                </picture>
+            </div>    
+        </section>
+        <section class="services" id="services">
+            <div class="fixed-container services__container">
+                <h2 class="services__title">Что я делаю</h2>
+                <ul class="services__examples">
+                    <li class="services__example">
+                        <img src="img/service_1.png" alt="Display">
+                        <p class="services__text">Вёрстка лендинг&mdash;страниц 
+                            и&nbsp;сайтов любой сложности</p>
+                    </li>
+                    <li class="services__example">
+                        <img src="img/service_2.png" alt="Displays">
+                        <p class="services__text">Адаптивная вёрстка под все браузеры и устройства</p>
+                    </li>
+                    <li class="services__example">
+                        <img src="img/service_3.png" alt="Icon c#">
+                        <p class="services__text">Frontend&mdash;разработка и&nbsp;программирование</p>
+                    </li>
+                    <li class="services__example">
+                        <img src="img/service_4.png" alt="Icon settings">
+                        <p class="services__text">Исправление и доработка существующей вёрстки</p>
+                    </li>
+                </ul>
+                <button class="services__more">Узнать стоимость</button>
+            </div>    
+        </section>
+        <section class="examples" id='examples'>
+            <div class="fixed-container examples__container">
+                <h2 class="examples__title">Примеры моих работ</h2>
+                <div class="examples__pages">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide examples__page">
+                            <img src="img/page_1.png" alt="site_img">
+                            <p class='examples__description'>Сайт психолога Веры Антоновой</p>
+                        </div>
+                        <div class="swiper-slide examples__page">
+                            <img src="img/page_2.png" alt="site_img">
+                            <p class='examples__description'>Интернет магазин детской одежды</p>
+                        </div>
+                        <div class="swiper-slide examples__page">
+                            <img src="img/page_3.png" alt="site_img">
+                            <p class='examples__description'>Сайт магазина &laquo;Рыболов&raquo;</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>    
+                <button class="arrow"></button>
+                <button class="arrow2"></button>
+                <button class="more examples__button">Заказать проект</button>
+            </div>    
+        </section>
+        <section class="price" id="price">
+            <div class="wow price__symbol price_symbol1" data-wow-offset="200">{&nbsp;}</div>
+            <div class="wow price__symbol price_symbol2" data-wow-offset="200">&lt;div&gt;</div>  
+            <div class="wow price__symbol price_symbol3" data-wow-offset="200">#</div>
+            <div class="wow price__symbol price_symbol4" data-wow-offset="200">{&nbsp;}</div>
+            <div class="wow price__symbol price_symbol5" data-wow-offset="200">&lt;/&gt;</div>
+            <div class="fixed-container price__box">
+                <h2 class="price__description">Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h2>
+                <p class="price__clarification">* Срок и стоимость могут отличаться &nbsp;от&nbsp;заявленных и рассчитываются  &nbsp;индивидуально, в&nbsp;зависимости &nbsp;от&nbsp;сложности задач. </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="about fixed-container">
+            <nav class="about__footer-menu">
+                <ul class="about__list">
+                    <li class="about__list-row"><a class="about__list-link" href='#services'>Услуги</a></li>
+                    <li class="about__list-row"><a class="about__list-link" href='#examples'>Портфолио</a></li>
+                    <li class="about__list-row"><a class="about__list-link" href='#price'>Стоимость</a></li>
+                </ul>
+            </nav>
+            <div class="about__contact">
+                <div class="about__footer-tel"><a href="tel:+74999955577" class="about__number"><i class="icon-phone"></i> +7&nbsp;(499)&nbsp;995-77-55</a></div>
+                <div class="mail about__footer-mail"><a href="mailto:info@agency.ru" class="about__email"><i class="icon-mail-alt"></i> info@agency.ru </a></div>
+            </div>
+            <div class="about__footer-right">
+                <button class="about__footer-calling">Заказать звонок</button>
+                <ul class="about__footer-links">
+                    <li class="about__footer-link"><a href="https://vk.com/" class="about__footer-link about__footer-link_vk" target="_blank"></a></li>
+                    <li class="about__footer-link"><a href="https://www.facebook.com/" class="about__footer-link about__footer-link_fb" target="_blank"></a></li>
+                    <li class="about__footer-link"><a href="https://twitter.com/" class="about__footer-link about__footer-link_twitter" target="_blank"></a></li>
+                    <li class="about__footer-link"><a href="https://www.instagram.com/" class="about__footer-link about__footer-link_inst" target="_blank"></a></li>
+                </ul>
+            </div>    
+        </div>
+        <div class="copyright">
+            &copy;&nbsp;Илья Никифоров, 2019-н.в. 
+        </div>
+    </footer>
+    <form class="main__form" id = "main__form">
+        <div class="form__container">
+            <input type="hidden" name="project_name" value="Landing">
+            <input type="hidden" name="admin_email" value="fs.1980@mail.ru">
+            <input type="hidden" name="form_subject" value="Заказ проекта">
+            <div class="form__symbol form_symbol1" data-wow-offset="200">{&nbsp;}</div>
+            <div class="form__symbol form_symbol2" data-wow-offset="200">&lt;div&gt;</div>  
+            <div class="form__symbol form_symbol3" data-wow-offset="200">#</div>
+            <input class='form__name' type="text" name="Name" placeholder="Ваше имя" required><br>
+            <input class='form__number' type="text"  name="Phone" required><br>
+            <input class='form__mail' id='eMail' type="email" name="email" placeholder="yourmail@mail.ru" required><br>
+            <button class='form__button' type="submit">Отправить</button>
+        </div>
+    </form>
+    <form class="calling__form" id = "calling__form">
+        <div class="form__container">
+            <input type="hidden" name="project_name" value="Landing">
+            <input type="hidden" name="admin_email" value="fs.1980@mail.ru">
+            <input type="hidden" name="form_subject" value="Заказ проекта">
+            <div class="form__symbol form_symbol1" data-wow-offset="200">{&nbsp;}</div>
+            <div class="form__symbol form_symbol2" data-wow-offset="200">&lt;div&gt;</div>  
+            <div class="form__symbol form_symbol3" data-wow-offset="200">#</div>
+            <input class='form__name' type="text" name="Name" placeholder="Ваше имя" required><br>
+            <input class='form__number' type="text" name="Phone" required><br>
+            <button class='form__button' type="submit">Отправить</button>
+        </div>
+    </form>
+    <script src="js/slider.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+</body>
+</html>
