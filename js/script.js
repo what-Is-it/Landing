@@ -93,6 +93,7 @@ $('form').each(function () {
     // eslint-disable-next-line func-names
   }).done(() => {
 
+    console.log('Sended')
     th.trigger('reset');
   });
 
